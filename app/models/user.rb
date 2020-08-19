@@ -8,8 +8,9 @@ class User
   field :name, type: String
   field :password_digest, type: String
   field :create_date, type: DateTime, default: DateTime.now
+  field :email, type: String
 
-  validates_presence_of :name
+  validates_presence_of :name, :email
   validates_uniqueness_of :name
 
 

@@ -26,7 +26,7 @@ module Api
     end
 
     def user_create_param
-      field_names = %i[name password password_confirmation]
+      field_names = %i[name password password_confirmation email]
       params.permit(field_names)
     end
 
