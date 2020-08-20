@@ -13,5 +13,7 @@ class User
   validates_presence_of :name, :email
   validates_uniqueness_of :name
 
+  has_many :articles
+
 
 end
