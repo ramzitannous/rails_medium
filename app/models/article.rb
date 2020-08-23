@@ -8,6 +8,7 @@ class Article
   field :create_date, type: DateTime, default: DateTime.now
 
   belongs_to :user
+  has_many :comments
 
   validates_presence_of :title, :body, :tags, :description, :user
 end
